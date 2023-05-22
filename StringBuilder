@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+namespace exp2staticclass
+{
+ internal class Program
+ {
+ 
+ static void Main(string[] args)
+ {
+ StringBuilder stringBuilder = new StringBuilder();
+ // Appending strings
+ stringBuilder.Append("avinash ");
+ stringBuilder.Append("Rathod ");
+ // Inserting string at a specific position
+ stringBuilder.Insert(7, "vishnu"); 
+ // Replacing a substring
+ stringBuilder.Replace("avinash", "avi"); 
+ // Removing a portion of the string
+ stringBuilder.Remove(3,7 ); 
+ // Converting to string
+ string finalString = stringBuilder.ToString();
+ Console.WriteLine(finalString); 
+ Console.ReadLine();
+ }
+ }
+}
